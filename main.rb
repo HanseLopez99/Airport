@@ -72,6 +72,8 @@ def main
   animal2.make_sound(animal2)
   animal2.make_sound(animal2)
 
+  puts "\n"
+
   interviewer.say_thanks
   puts "\n"
   interviewer.say_lets_find_anothe_one
@@ -85,6 +87,8 @@ def main
   person4.greet
   person4.say_enter_plane
 
+  puts "\n"
+
   interviewer.say_thanks
   puts "\n"
   interviewer.say_lets_find_anothe_one
@@ -94,6 +98,8 @@ def main
   person5.greet
   person5.say_waiting
   person5.introduce
+
+  puts "\n"
 
   interviewer.say_thanks
   puts "\n"
@@ -105,8 +111,9 @@ def main
 
   puts "\n"
 
+  print "Interviewer: "
   interviewer.show_letter
-  
+  puts "\n"
 end
 
 main

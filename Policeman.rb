@@ -8,6 +8,6 @@ class Policeman < Employee
   end
 
   def ask_for_access_card
-    puts "Can I see your access card?"
+    puts "I am a security guard. Can I see your access card?"
   end
 end
