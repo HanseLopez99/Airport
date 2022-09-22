@@ -1,7 +1,7 @@
-require_relative './Work.rb'
+require_relative './AuthorizationLetter.rb'
 
 class Interviewer < Employee
-  prepend Work
+  prepend AuthorizationLetter
 
   def introduce 
     puts "Interviewer: I'm an interviewer. I'm going to ask some questions to the people in the airport and show the environment here."
@@ -22,5 +22,8 @@ class Interviewer < Employee
   def listen_to_animals_area
     puts "Interviewer: Ohh look at the animals, there is a lot of sound."
   end
+  
+  def show_letter
+    AuthorizationLetter::show_letter
+  end
 end
-

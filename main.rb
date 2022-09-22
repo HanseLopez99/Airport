@@ -94,6 +94,18 @@ def main
   person5.greet
   person5.say_waiting
   person5.introduce
+
+  interviewer.say_thanks
+  puts "\n"
+  interviewer.say_lets_find_anothe_one
+  puts "\n"
+
+  person2 = Policeman.new(2000, "Security")
+  person2.ask_for_access_card
+
+  puts "\n"
+
+  interviewer.show_letter
   
 end
 

@@ -6,4 +6,8 @@ class Policeman < Employee
   def introduce
     puts "I'm a policeman. I'm going to ask some questions to the passengers for security."
   end
+
+  def ask_for_access_card
+    puts "Can I see your access card?"
+  end
 end
