@@ -7,6 +7,7 @@ require './Veterinarian.rb'
 require './Animal.rb'
 require './Dog.rb'
 require './Cat.rb'
+require './Passenger.rb'
 
 def main 
   puts "\n"
@@ -70,6 +71,29 @@ def main
   animal2 = Cat.new()
   animal2.make_sound(animal2)
   animal2.make_sound(animal2)
+
+  interviewer.say_thanks
+  puts "\n"
+  interviewer.say_lets_find_anothe_one
+  puts "\n"
+
+  interviewer.interview
+
+  puts "\n"
+
+  person4 = Passenger.new("Jane", 25, "201", "Bogota")
+  person4.greet
+  person4.say_enter_plane
+
+  interviewer.say_thanks
+  puts "\n"
+  interviewer.say_lets_find_anothe_one
+  puts "\n"
+
+  person5 = Passenger.new("John", 30, "231", "Berlin")
+  person5.greet
+  person5.say_waiting
+  person5.introduce
   
 end
 

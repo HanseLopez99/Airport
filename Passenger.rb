@@ -1,21 +1,26 @@
 
 class Passenger < Person
-  attr_accesor :seat, :ticket
+  attr_accessor :seat, :ticket
 
-  def initialize(seat, ticket)
+  def initialize(name, age, seat, flight_to)
+    super(name, age)
     @seat = seat
-    @ticket = ticket
+    @flight_to = flight_to
   end
 
-  def enter_plane
-    puts "I'm entering the plane."
+  def introduce 
+    puts "My name is #{@name}, I'm #{@age} years old and I'm a flying to #{@flight_to}."
   end
 
-  def exit_plane
-    puts "I'm exiting the plane."
+  def say_ticket
+      puts "My ticket is #{@ticket}."
+  end
+  
+  def say_enter_plane
+    puts "Sorry, but I need to enter the plane, now."
   end
 
-  def wait
-    puts "I'm waiting."
+  def say_waiting
+    puts "Sure, I'm waiting for my flight. I have time."
   end
 end
